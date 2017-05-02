@@ -37,6 +37,8 @@ body{
 a{
     font-family: startksmall;
     font-size:12px;
+    text-decoration: none;
+    color: white;
 }
 
 .btn{

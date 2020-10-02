@@ -9,7 +9,8 @@ const contents = JSON.stringify(posts.map(post => {
 		readingTime: post.readingTime,
 		mediaPath: post.mediaFilePath,
 		author: post.author,
-		tags: post.tags
+		tags: post.tags,
+		art_credit: post.art_credit
 	};
 }));
 

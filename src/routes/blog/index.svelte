@@ -16,8 +16,7 @@
 		filenames.push(_file[_file.length-1]);
 	}
 
-	console.log(filenames);
-
+	posts = posts.filter(post => post.tags.indexOf('topic') == -1)
 </script>
 
 <style>
@@ -108,7 +107,7 @@
 			<a rel='prefetch' href='blog/{post.slug}' class="post">
 				<div class="blog-item">
 					{#if filenames[i].split('.')[1] == 'mp4'}
-						<video class="snapimg" autoplay muted>
+						<video class="snapimg" autoplay muted loop>
 							<source src="{post.mediaPath}" type="video/mp4">
 							Your browser does not support the video tag.
 						</video>

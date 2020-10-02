@@ -1,0 +1,52 @@
+.topic-item {
+    padding: 35px 25px;
+    border: 1px solid #e9e9e9;
+    grid-template-columns: auto auto;
+    display: grid;
+    border-radius: 5px;
+}
+
+@media only screen and (min-width: 370px) {
+    div.topic-item > video {
+        width: 100px;
+        height: 100px;
+        grid-column-start: 1;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+div.topic-item > video {
+    width: 150px;
+    height: 150px;
+    grid-column-start: 1;
+}
+
+div.topic-item > .topic-content {
+    grid-column-start: 2;
+    padding-left: 30px;
+}
+
+.topic-content > p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 92px;
+}
+
+img.default {
+    width: 150px;
+    height: 150px;
+}
+
+.topic-list:not(:first-child) {
+    margin-top: 20px;
+}
+
+.disabled {
+    color: #999 !important;
+    background-color: #e9e9e9 !important;
+    border: 1px solid #d2d2d2 !important;
+}

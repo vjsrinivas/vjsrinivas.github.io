@@ -15,7 +15,6 @@
 
 <script>
 	export let post;
-	console.log(post);
 </script>
 
 <style>
@@ -29,7 +28,7 @@
 	*/
 	.content :global(h2) {
 		font-size: 1.4em;
-		font-weight: 500;
+		font-weight: 700;
 	}
 
 	.content :global(pre) {
@@ -51,6 +50,34 @@
 
 	.content :global(li) {
 		margin: 0 0 0.5em 0;
+		font-size: 1.1em
+	}
+
+	.content :global(img) {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.content :global(figcaption) {
+		margin-top: 20px;
+	}
+
+	.content :global(h1) {
+		font-weight: 900;
+	}
+
+	.content :global(hr) {
+		color: white;
+	}
+
+	.content :global(p) {
+		font-size: 1.1em;
+		line-height: 1.75em;
+	}
+
+	.content :global(figcaption) {
+		text-align: center;
 	}
 </style>
 
@@ -59,5 +86,6 @@
 </svelte:head>
 <div class='content'>
 	<h1>{post.title}</h1>
+	<hr>
 	{@html post.html}
 </div>

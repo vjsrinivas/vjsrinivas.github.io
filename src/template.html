@@ -10,7 +10,17 @@
 	<link rel='stylesheet' href='global.css'>
 	<link rel='manifest' href='manifest.json' crossorigin='use-credentials'>
 	<link rel='icon' type='image/png' href='logo.png'>
-
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+			tex2jax: {
+			inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+			processEscapes: true
+			}
+		});
+	</script>
+	<script src="https://kit.fontawesome.com/d1e7542e7f.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+		
 	<!-- Sapper generates a <style> tag containing critical CSS
 	     for the current page. CSS for the rest of the app is
 	     lazily loaded when it precaches secondary pages -->

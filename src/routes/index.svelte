@@ -288,7 +288,7 @@
 			<a href="https://www.linkedin.com/in/vjrajagopal/"><i class="fab fa-linkedin"></i></a>
 			<!-- <a href="https://www.artstation.com/vijaysrinivas/"><i class="fab fa-artstation"></i></a> -->
 			<a href="https://devpost.com/vjsrinivas">
-				<img class="social" src="http://nealrs.github.io/devpost-follow-button/icon/devpost.svg" id="devpost"/>
+				<img class="social" src="post-res/devpost.svg" id="devpost"/>
 			</a>
 		</div>
 	</div>

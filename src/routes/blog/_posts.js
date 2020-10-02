@@ -53,7 +53,7 @@ const posts = fs
   .map(fileName => {
     const fileMd = fs.readFileSync(path.join(POSTS_DIR, fileName), 'utf8')
     const { data, content: rawContent } = matter(fileMd)
-    const { title, description, created, updated, tags } = data
+    const { title, description, created, updated, tags, art_credit } = data
     const slug = fileName.split('.')[0]
     let content = rawContent;
     let excerpt = '';
@@ -69,10 +69,17 @@ const posts = fs
     const html = marked.parse(content.replace(EXCERPT_SEPARATOR, ''))
     const time = readingTime(content).text
     const postName = fileName.slice(0,-3); // assume .md
+    
+    //Thumbnail convention: [MD_FILENAME]_thumb.png or .mp4
     const mediaThumb = path.join(static_media, postName, postName+'_thumb.')
     //const mediaThumb = path.join('post-res', postName, postName+'_thumb.')    
 
-    const author = "Vijay Rajagopal";
+    const author = 'Vijay Rajagopal';
+    let art_author = 'Vijay Rajagopal';
+    if(art_credit){
+      art_author = art_credit;
+    }
+
     var mediaFilePath = '';
     // Assume its jpg right now:
     if(fs.existsSync(mediaThumb+'png')) {
@@ -101,7 +108,8 @@ const posts = fs
       author,
 	    readingTime: time,
       mediaFilePath,
-      tags: _tags
+      tags: _tags,
+      art_credit: art_author
     }
   })
 

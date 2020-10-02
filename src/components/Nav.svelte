@@ -20,8 +20,8 @@
 		margin-right: auto;
 		margin-top: 37px;
 		margin-bottom: 25px;
-		max-width: 829px;
-		padding: 0;
+		/* max-width: 829px; */
+		padding: 0 2em;
 	}
 
 	/* clearfix */
@@ -61,7 +61,7 @@
 
 <nav>
 	<ul>
-		<!-- <li><a class="btn-gen" rel=prefetch aria-current='{segment === "blog" ? "page" : undefined}' href='blog'>Blog</a></li> -->
+		<li><a class="btn-gen" rel=prefetch aria-current='{segment === "blog" ? "page" : undefined}' href='blog'>Blog</a></li>
 		<li><a class="btn-gen" aria-current='{segment === undefined ? "page" : undefined}' href='.'>Home</a></li>
 		<!-- <li><a aria-current='{segment === "about" ? "page" : undefined}' href='about'>about</a></li> -->
 

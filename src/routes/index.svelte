@@ -117,8 +117,32 @@
 		margin-top: 20px;
 	}
 
+	.social, .fas, .fab {
+		margin-right: 20px;
+		width: 30px;
+		height: 25px;
+		font-size: 30px;
+	}
+
+	.fas, .fab {
+		opacity: 0.75;
+	}
+
+	.fas:hover, .fab:hover {
+		opacity: 1;
+	}
+
+	.fab:last-child {
+		width: 25px;
+	}
+	
 	img.social {
-		margin-right: 10px;
+		opacity: 0.6;
+		cursor: pointer;
+	}
+
+	.social:hover {
+		opacity: 0.9;
 	}
 
 	div.recent {
@@ -160,7 +184,7 @@
 		margin-top: 0px;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 11px;
+		font-size: 12px;
 		line-height: 28px;
 		color: #777777;
 	}
@@ -242,7 +266,6 @@
 		let _file = posts[0].mediaPath.split('/');
 		filename = _file[_file.length-1]
 	}
-	console.log(posts, filename)
 	export {filename};
 </script>
 
@@ -260,12 +283,13 @@
 			</button>
 		</a>
 		<div id="sociallinks">
-			<a href="https://github.com/vjsrinivas">
-				<img alt="Social Link for Github" class="social" src="githubicon.svg" width="30px" height="30px">
+			<a href="mailto:vijaythinks@gmail.com"><i class="fas fa-envelope"></i></a>
+			<a href="https://github.com/vjsrinivas"><i class="fab fa-github"></i></a>
+			<a href="https://www.linkedin.com/in/vjrajagopal/"><i class="fab fa-linkedin"></i></a>
+			<!-- <a href="https://www.artstation.com/vijaysrinivas/"><i class="fab fa-artstation"></i></a> -->
+			<a href="https://devpost.com/vjsrinivas">
+				<img class="social" src="http://nealrs.github.io/devpost-follow-button/icon/devpost.svg" id="devpost"/>
 			</a>
-			<a href="mailto:vijaythinks@gmail.com">
-				<img alt="Email Link for Outlook" class="social" src="outlookicon.svg" width="30px" height="30px">
-			</a>	
 		</div>
 	</div>
 	<div class="item" id="bio-desc">
@@ -283,7 +307,7 @@
 	<div class="item recent" id="recent-img">
 		{#if posts.length > 0}
 			{#if filename.split('.')[1] == 'mp4'}
-				<video class="preview_video" autoplay>
+				<video class="preview_video" autoplay muted loop>
 					<source src="{posts[0].mediaPath}" type="video/mp4">
 					Your browser does not support the video tag.
 				</video>
@@ -291,10 +315,13 @@
 				<img class="preview_img" src="{posts[0].mediaPath}" alt="{posts[0].title}'s image"/>
 			{/if}
 		{:else}
-			<!-- <img class="preview_img" src="https://via.placeholder.com/365x365", alt="Image shows nothing; indicates no blog posts made yet"/> -->
+			<img class="preview_img" src="https://via.placeholder.com/365x365", alt="Image shows nothing; indicates no blog posts made yet"/>
 			<!-- <div class="skeleton image skeleton-bg"></div> -->
 		{/if}
-		<!-- <p class="caption">Credit: Vijay Rajagopal</p> -->
+
+		{#if posts.length > 0}
+		<p class="caption">Credit: {posts[0].art_credit}</p>
+		{/if}
 	</div>
 	<div class="item recent" id="recent-post">
 		{#if posts.length > 0}

@@ -250,7 +250,8 @@ return gauss_img.astype(np.uint8)
 
 **[1]** - Figure 1's image source taken from thumbnail of this video: https://www.youtube.com/watch?v=0GFSppL1CRQ
 
-**[2]** - GitHub link: **COMING OUT SOON**
+**[2]** - GitHub link: https://github.com/vjsrinivas/image-filter 
+
 
 **[3]** - The lens flares do not rotate due to project time constraint, but the rotated versions of lens flares do exist. The code just does not take into account these images.
 

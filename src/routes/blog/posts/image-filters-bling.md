@@ -54,7 +54,10 @@ end if
 
 For reference, the brightness of an image can be computed with the following calculation:
 
-\\[ Brightness =  \sqrt(0.241*(C_R^2)+0.691*(C_G^2) + 0.068*(C_B^2))/(Width * Height)\\]
+$$
+Brightness =  \sqrt(0.241*(C_R^2)+0.691*(C_G^2) + 0.068*(C_B^2))/(Width * Height)
+$$
+
 
 ```
 def calculateBrightness(img,w,h):

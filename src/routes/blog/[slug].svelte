@@ -14,6 +14,14 @@
 </script>
 
 <script>
+	import { beforeUpdate, afterUpdate } from 'svelte';
+	afterUpdate(() => {
+		// ...the DOM is now in sync with the data
+		if(window.MathJax) {
+			window.MathJax.typeset();
+		}
+	});
+	
 	export let post;
 </script>
 
@@ -50,7 +58,7 @@
 
 	.content :global(li) {
 		margin: 0 0 0.5em 0;
-		font-size: 1.1em
+		font-size: 1.0em;
 	}
 
 	.content :global(img) {

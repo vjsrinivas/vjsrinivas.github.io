@@ -38,7 +38,7 @@ With the semantics of glitch art laid out for us, this post attempts to create a
     <source src="post-res/image-filters-corrupt/corrupt_1_video.mp4" type="video/mp4">
     Your browser does not support the video tag.
 </video>
-<figcaption><b>Fig. 2</b> - This is an example of glitch art (or specifically datamoshing) applied progressively to a video. Credit to JYP Entertainment's music video of <a href="https://www.youtube.com/watch?v=kOHB85vDuow">FANCY</a> by TWICE.</figcaption>
+<figcaption><b>Fig. 2</b> - This is an example of glitch art (or specifically pixel sorting) applied progressively to a video. Credit to JYP Entertainment's music video of <a href="https://www.youtube.com/watch?v=kOHB85vDuow">FANCY</a> by TWICE.</figcaption>
 </figure>
 
 # Corruption Method

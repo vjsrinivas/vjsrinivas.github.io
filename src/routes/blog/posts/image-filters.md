@@ -25,30 +25,15 @@ In this article, I am simply recreating some of the more interesting image filte
     </div>
 </div>
 
-<div class="topic-list disabled">
+<div class="topic-list">
     <div class="topic-item">
-        <img class="default" src="post-res/default.png"/>
-        <!-- <video autoplay muted loop>
-            <source src="post-res/image-filters-bling/image-filters-bling_thumb.mp4" type="video/mp4">
+        <video autoplay muted loop>
+            <source src="post-res/image-filters-corrupt/image-filters-corrupt_thumb.mp4" type="video/mp4">
             Your browser does not support the video tag.
-        </video> -->
+        </video>
         <div class="topic-content">
-            <a><h1>Video Corruption Filter [WIP]</h1></a>
+            <a href="/blog/image-filters-corrupt"><h1>Video Corruption Filter</h1></a>
             <p>This filter determines important figures around in an image and proceeds to algorithmically destroy the quality of those objects' background.</p>
-        </div>
-    </div>
-</div>
-
-<div class="topic-list disabled">
-    <div class="topic-item">
-        <img class="default" src="post-res/default.png"/>
-        <!-- <video autoplay muted loop>
-            <source src="post-res/image-filters-bling/image-filters-bling_thumb.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video> -->
-        <div class="topic-content">
-            <a><h1>Mask Generation [WIP]</h1></a>
-            <p>This filter detects a person's face, generates a 3D mesh based on a person's generalized facial features & pose. With this 3D mesh, the limit is to your imagination, but let's stick with the standard "sunglasses" look.</p>
         </div>
     </div>
 </div>

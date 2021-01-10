@@ -1,0 +1,10 @@
+.layer-setup, .layer-setup > tbody > tr > td, .layer-setup > tbody > tr, .layer-setup > tbody > tr > th {
+    border: 1px solid black;
+}
+
+.layer-setup {
+}
+
+.tbody {
+    text-align: center;
+}

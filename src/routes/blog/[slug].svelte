@@ -17,8 +17,14 @@
 	import { beforeUpdate, afterUpdate } from 'svelte';
 	afterUpdate(() => {
 		// ...the DOM is now in sync with the data
-		if(window.MathJax) {
-			window.MathJax.typeset();
+		if(window) {
+			try {
+				if(window.MathJax) {
+					window.MathJax.typeset();
+				}	
+			} catch (error) {
+				console.log(error);
+			}
 		}
 	});
 	
@@ -58,7 +64,8 @@
 
 	.content :global(li) {
 		margin: 0 0 0.5em 0;
-		font-size: 1.0em;
+		/* font-size: 1.0em; */
+		font-size: 18px;
 	}
 
 	.content :global(img) {

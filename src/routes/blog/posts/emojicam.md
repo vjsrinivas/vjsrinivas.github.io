@@ -19,7 +19,7 @@ This project was done for fun and was done within 24-hours. EmojiCam takes in a 
 
 <figure>
 <img src="post-res/emojicam/emojicamprocesspipeline.png", alt="Image of cache processing for Emojicam"/>
-<figcaption><b>Fig. 1</b> - Shows the general process of generating the "emoji mapping", where each color combination is assgined an emoji. To determine the best color-to-emoji match, I find the major colors within each emoji, do a ranking system, match them to the 256x256x256 matrix. Unresolved spaces are filled in with a simple distance calculation. The mapping is saved to file when the camera portion (Fig. 2) is started.</figcaption>
+<figcaption><b>Fig. 1</b> - Shows the general process of generating the "emoji mapping", where each color combination is assigned an emoji. To determine the best color-to-emoji match, I find the major colors within each emoji, do a ranking system, match them to the 256x256x256 matrix. Unresolved spaces are filled in with a simple distance calculation. The mapping is saved to file when the camera portion (Fig. 2) is started.</figcaption>
 </figure>
 
 <figure>
@@ -31,11 +31,11 @@ The processing pipeline of EmojiCam consists of a pre-launch process that comput
 
 ## Quick Notes About Implementation
 
-**kMeans** - So kMeans is a basic unsupervised clustering algorithm. More simlpy, given a number of cluster points to converge to, the algorithm can independelty sort samples into assignment to one of the clusters. I used the `sklearn` implementation of kMeans, which will not guarentee to return a point for every cluster.
+**kMeans** - So kMeans is a basic unsupervised clustering algorithm. More simply, given a number of cluster points to converge to, the algorithm can independently sort samples into assignment to one of the clusters. I used the `sklearn` implementation of kMeans, which will not guarantee to return a point for every cluster.
 
 I forced a three cluster ranking per emoji, which means each emoji has three color coordinates (R,G,B) with an associated percentage term that represents how many pixels out of the total pixels went to that cluster. This three-element list is ordered by this percentage term for the ranking system. 
 
-**Ranking System** - You can probably figure out that a 256x256x256 color matrix gets you a color space of **16777216 unique colors**. Unforunately, there are only around 4000 emojis within the Twitter Emoji set. So every emoji will own multiple colors within the matrix. The ranking system starts by scrolling through every emoji, looking at its top-1 color and looking up this color in the matrix.
+**Ranking System** - You can probably figure out that a 256x256x256 color matrix gets you a color space of **16777216 unique colors**. Unfortunately, there are only around 4000 emojis within the Twitter Emoji set. So every emoji will own multiple colors within the matrix. The ranking system starts by scrolling through every emoji, looking at its top-1 color and looking up this color in the matrix.
 
 If the matrix element is empty, then that emoji will be assigned to that element. If there is already another emoji in the element, we compare the percentages between the two, and the larger ratio wins. The losing emoji is placed in the nearest matrix element that isn't occupied (this is non-optimal since neighbors of the conflicting space can have a smaller ratio than the losing emoji). For the leftover spaces, we loop through these spaces and compute the distance from it to all the originally occupied areas. The closest emoji is assigned to the leftover spaces.
 

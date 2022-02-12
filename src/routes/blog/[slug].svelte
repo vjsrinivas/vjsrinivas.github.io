@@ -94,6 +94,17 @@
 	.content :global(figcaption) {
 		text-align: center;
 	}
+
+	.content :global(img) {
+		width: 100%;
+		height: auto;
+	}
+
+	.content :global(video) {
+		width: 100%;
+		height: auto;
+	}
+
 </style>
 
 <svelte:head>

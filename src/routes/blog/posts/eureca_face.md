@@ -19,7 +19,7 @@ This project was done to complete one of my breadth requirements for the Tickle 
 - [Running Code](#running-code)
 
 <figure>
-<img src="post-res/eureca_face/anim_header_1.gif" width="800" alt="GIF showing animation of an unaltered image, its detection, a degrade image, and a corrected image"/>
+<img src="post-res/eureca_face/anim_header_1.gif" alt="GIF showing animation of an unaltered image, its detection, a degrade image, and a corrected image"/>
 </figure>
 
 ## Abstract
@@ -34,7 +34,7 @@ Additionally, we reconstruct the “degraded” image with various image process
 ## Face Detectors:
 
 <figure>
-<img src="post-res/eureca_face/11513D05.jpg" width="800" alt="Example of detection with RetinaFace from the RetinaFace authors"/>
+<img src="post-res/eureca_face/11513D05.jpg" alt="Example of detection with RetinaFace from the RetinaFace authors"/>
 </figure>
 
 

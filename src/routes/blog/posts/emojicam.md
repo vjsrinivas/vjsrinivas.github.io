@@ -46,20 +46,29 @@ If the matrix element is empty, then that emoji will be assigned to that element
   Your browser does not support the video tag.
 </video>
 
+**With Alpha-blending**
+
 <video autoplay muted loop>
   <source src="post-res/emojicam/test_out_no_weights-converted.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+
+**Without Alpha-blending**
 
 <video autoplay muted loop>
   <source src="post-res/emojicam/test_out_stream-converted.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
+**Live camera feed with Alpha-blending**
+
 <video autoplay muted loop>
   <source src="post-res/emojicam/test_out_stream_wo_weight-converted.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+
+**Live camera feed without Alpha-blending**
+
 <br>
 <br>
 

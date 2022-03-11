@@ -276,7 +276,7 @@
 <div class="content content-grid">
 	<div class="item" id="bio">
 		<h1 id="name">Vijay Rajagopal</h1>
-		<a href="Resume_Summer_2020.pdf">
+		<a href="Resume_Spring_2022.pdf">
 			<button id="target-resume">
 				<span>View Resume</span>
 				<!-- <img class="btnbg" src="targetbtn_bg.svg" alt="Kiwi standing on oval"> -->

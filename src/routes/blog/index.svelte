@@ -46,6 +46,22 @@
 		grid-template-columns: 250px auto; 
 	}
 
+	@media only screen and (max-width: 600px) {
+		.blog-item {
+			display: inherit !important;
+		}
+		.snapdiv {
+			padding-left: 0px !important;
+		}
+	}
+
+	@media only screen and (max-width: 320px) {
+		div.blog-item > img {
+			width: 200px;
+			height: 200px;
+		}
+	}
+
 	.blog-item:last-child {
 		border: none;
 	}

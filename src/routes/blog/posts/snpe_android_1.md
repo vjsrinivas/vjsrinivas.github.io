@@ -16,7 +16,7 @@ For the past couple of weeks, I've been working on a project that would mimic th
 </style>
 
 
-<video autoplay muted class="video_override">
+<video autoplay loop muted class="video_override">
   <source src="./post-res/snpe_android_1/demo1.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>

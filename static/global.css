@@ -107,3 +107,22 @@ a.btn-gen:disabled {
 	border-radius: 4px;
 	margin-right: 5px;
 }
+
+
+table, th, td {
+	margin-right: auto;
+	margin-left: auto;
+	border: 1px solid black !important;
+}
+
+th, td {
+	padding: 10px;
+}
+
+thead {
+	background-color: #f3f3f3
+}
+
+tr:nth-child(even) {
+	background-color: #f3f3f3
+}

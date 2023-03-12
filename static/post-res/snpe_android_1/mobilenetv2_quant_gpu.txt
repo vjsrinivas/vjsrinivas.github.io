@@ -1,0 +1,21 @@
+2023-03-05 11:08:45.981 22993-22993 INFERSTATS              com.example.neuralexample            D  25.641025641025642
+2023-03-05 11:08:46.173 22993-22993 INFERSTATS              com.example.neuralexample            D  25.641025641025642
+2023-03-05 11:08:46.378 22993-22993 INFERSTATS              com.example.neuralexample            D  25.0
+2023-03-05 11:08:46.586 22993-22993 INFERSTATS              com.example.neuralexample            D  25.641025641025642
+2023-03-05 11:08:46.785 22993-22993 INFERSTATS              com.example.neuralexample            D  25.0
+2023-03-05 11:08:46.986 22993-22993 INFERSTATS              com.example.neuralexample            D  24.390243902439025
+2023-03-05 11:08:47.185 22993-22993 INFERSTATS              com.example.neuralexample            D  24.390243902439025
+2023-03-05 11:08:47.384 22993-22993 INFERSTATS              com.example.neuralexample            D  25.0
+2023-03-05 11:08:47.585 22993-22993 INFERSTATS              com.example.neuralexample            D  25.0
+2023-03-05 11:08:47.785 22993-22993 INFERSTATS              com.example.neuralexample            D  25.0
+2023-03-05 11:08:47.984 22993-22993 INFERSTATS              com.example.neuralexample            D  25.0
+2023-03-05 11:08:48.185 22993-22993 INFERSTATS              com.example.neuralexample            D  25.641025641025642
+2023-03-05 11:08:48.384 22993-22993 INFERSTATS              com.example.neuralexample            D  25.0
+2023-03-05 11:08:48.583 22993-22993 INFERSTATS              com.example.neuralexample            D  25.641025641025642
+2023-03-05 11:08:48.778 22993-22993 INFERSTATS              com.example.neuralexample            D  28.57142857142857
+2023-03-05 11:08:48.957 22993-22993 INFERSTATS              com.example.neuralexample            D  22.72727272727273
+2023-03-05 11:08:49.175 22993-22993 INFERSTATS              com.example.neuralexample            D  29.41176470588235
+2023-03-05 11:08:49.384 22993-22993 INFERSTATS              com.example.neuralexample            D  21.73913043478261
+2023-03-05 11:08:49.587 22993-22993 INFERSTATS              com.example.neuralexample            D  22.72727272727273
+2023-03-05 11:08:49.799 22993-22993 INFERSTATS              com.example.neuralexample            D  22.22222222222222
+

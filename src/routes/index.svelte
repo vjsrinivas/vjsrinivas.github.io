@@ -84,6 +84,10 @@
 		background-color: #FF8200;
 	}
 
+	#employ {
+		background-color: #2663FF;
+	}
+
 	#target-resume {
 		border: none;
 		font-family: Karla;
@@ -295,13 +299,14 @@
 	<div class="item" id="bio-desc">
 		<h3 class="heading">Biography</h3>
 		<p id="bio-body">
-			My name is Vijay Rajagopal, and I am a computer science student studying at the
+			My name is Vijay Rajagopal, and I am a computer science graduate from the <br><span class="text-highlight" id="utk">University of Tennessee.</span>
+			I specialize in <span class="text-highlight" id="employ">Computer Vision</span> for industrial applications and take interest in topics such as
+			<span class="text-highlight">Image Processing</span> and <br><span class="text-highlight ml">Machine Learning.</span>
+
+			<!-- My name is Vijay Rajagopal, and I am a computer science student studying at the
 			<br><span class="text-highlight" id="utk">University of Tennessee.</span>
 			My interests include creating software for a diverse audience as well as working with topics such as
-			<span class="text-highlight">Image Processing</span> and <br><span class="text-highlight ml">Machine Learning.</span>
-		</p>
-		<p id="bio-body">
-			I have had experience working in research positions during my time in college and hope to use it to help create impactful applications and services.
+			<span class="text-highlight">Image Processing</span> and <br><span class="text-highlight ml">Machine Learning.</span> -->
 		</p>
 	</div>
 	<div class="item recent" id="recent-img">

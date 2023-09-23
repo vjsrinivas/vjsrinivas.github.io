@@ -19,7 +19,11 @@ This project was done to complete one of my breadth requirements for the Tickle 
 - [Running Code](#running-code)
 
 <figure>
-<img src="post-res/eureca_face/anim_header_1.gif" alt="GIF showing animation of an unaltered image, its detection, a degrade image, and a corrected image"/>
+
+<video autoplay muted loop>
+  <source src="post-res/eureca_face/anim_header_1.mp4" type="video/mp4" alt="Video showing animation of an unaltered image, its detection, a degrade image, and a corrected image">
+  Your browser does not support the video tag.
+</video>
 </figure>
 
 ## Abstract

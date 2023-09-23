@@ -4,7 +4,7 @@ description: Blog post going over exporting one kind of SiamMask model into ONNX
 created: '2023-09-11T10:20:28.107Z'
 tags: machine learning
 ---
-During my masters thesis, I worked on different multiple object tracking (MOT) methods. There is another type of tracking method, single object tracking (SOT), that I always interested in but never got the chance to try. One such SOT method is called SiamMask, and this blog post will go over how I exported this network to ONNX.
+During my masters thesis, I worked on different multiple object tracking (MOT) methods. There is another type of tracking method, single object tracking (SOT), that I always was interested in but never got the chance to try. One such SOT method is called SiamMask, and this blog post will go over how I exported this network to ONNX.
 
 <!-- more -->
 

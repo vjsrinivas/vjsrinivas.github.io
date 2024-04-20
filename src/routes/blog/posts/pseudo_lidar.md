@@ -62,12 +62,13 @@ In many navigation and layout applications, there is a need for spatial data. Hi
         } )
     }
 
+    /*
     generate_plot("./post-res/pseudo_lidar/20240414_115355.csv", "gd")
     generate_plot("./post-res/pseudo_lidar/20240414_120609.csv", "gd1")
     generate_plot("./post-res/pseudo_lidar/20240414_120944.csv", "gd2")
     generate_plot("./post-res/pseudo_lidar/20240413_174803.csv", "gd3")
     generate_plot("./post-res/pseudo_lidar/20240414_123255.csv", "gd4")
-
+    */
 </script>
 <style>
     .viz {
@@ -84,9 +85,9 @@ In many navigation and layout applications, there is a need for spatial data. Hi
 
 ## Motivation
 
-Both LiDAR and RADAR produce a 3D point cloud but can be composed into a depth map. Although both are still used extensively for spatial Imaging, the biggest drawbacks have been the price, size, and processing power needed to get these methods working efficiently.
+Both LiDAR and RADAR can produce a 3D point cloud but can also be composed into a depth map. Although both are still used extensively for spatial imaging, the biggest drawbacks have been the price, size, and processing power needed to get these methods working efficiently.
 
-An alternative method has been to use stereosopic cameras - where a camera system has two lenses set a certain distance apart. Similar to how our eyes work, stereosopic cameras utilize the difference in the two images along with the distance between the two lenses to calculate spatial data. Typically this data is in the form of a depth map, but it can also be converted into a 3D point cloud if the intrinsics of the two lenses are known. The downside of stereosopic cameras is also hardware cost and the relatively large housing requirements for the two lenses. The quality of the depth map output can also decrease based on various environmental factors such as clutter and .
+An alternative method has been to use stereosopic cameras - where a camera system has two lenses set a certain distance apart. Similar to how our eyes work, stereosopic cameras utilize the difference in the two images along with the distance between the two lenses to calculate spatial data. Typically this data is in the form of a depth map, but it can also be converted into a 3D point cloud if the intrinsics of the two lenses are known. The downside of stereosopic cameras is also hardware cost and the relatively large housing requirements for the two lenses. The quality of the depth map output can also decrease based on various environmental factors such as clutter.
 
 So what could you do if you are limited by a tight budget or dimension requirement? In many computer vision applications, you’re usually stuck with a less-than-ideal, single lens camera, but a client could ask you to develop something that will require you to have spatial data. I was ruminating about this kind of situation and what my options could be.
 

@@ -10,7 +10,7 @@ Pen plotting is an artform that allows people to use machines to do the physical
 
 This isn't a new question. There have been multiple posts [[1]](https://urish.medium.com/how-to-turn-your-3d-printer-into-a-plotter-in-one-hour-d6fe14559f1a) [[2]](https://github.com/johnathantran/Pen-Plotter) and projects that took popular 3D printers and converted them into XY pen plotters. The general idea is to construct some kind of mechanism that holds the pen and figure out a pipeline to convert an image into gcode.
 
-For the former, I constructed a simple PLA holder [[download link]](https://drive.google.com/file/d/12XBc1dm8MU3V2Ip31h1jqYUUveD-SpJA/view?usp=sharing) that replaced the existing filament head for the Ender 3 Pro. It was also constructed in a way that it could use all the existing screws that held the extruder head in place, which removed the need to buy additional screws. One of the screws was also used to fasten the pen to the holder. 
+For the former, I constructed a simple PLA holder [[download link]](https://drive.google.com/file/d/12XBc1dm8MU3V2Ip31h1jqYUUveD-SpJA/view?usp=sharing) that replaced the existing filament head for the Ender 3 Pro. It was also constructed in a way that it could use all the existing screws that held the extruder head in place, which removed the need to buy additional screws. Two of the screws were also used to fasten the pen to the holder. 
 
 <div style="max-width: 650px; margin-right:auto; margin-left:auto">
     <img style="max-width: 300px;" src="post-res/pen_plot/holder_example.png" alt="Screenshot of simple PLA holder"/>
@@ -46,11 +46,12 @@ I performed a calibration sequence for each layer during the printing process:
 </div>
 
 Some important notes about this system:
-* A major shortcoming is how the holder affixes the pen with a single point of contact. This causes some pens or markers to be titled at an angle when pushed to the plastic
+* A major shortcoming is how the holder affixes the pen with two points of contact. This causes some pens or markers to be tilted at an angle when pushed to the PLA 
 * Likewise, this holder also doesn't support pens that __should__ be at an angle (think fountain pens)
+* Two screws also makes the adjustment process longer and more tedious
 * The calibration process worked well, but one thing not mentioned was the initial calibration of the plate to the first pen. This was a very tedious process on the Ender 3 Pro because of its manual adjustment wheels. Follow the standard calibration procedure for PLA printing to get the plate in proper position
 * Calibration process could use some improvements in terms of making sure that the pen pressure was consistent across all points on the plate
-* There are limitations to the svg2gcode tool - mainly that it only supports certain types of vector paths. It also doesn't support infill options, so I had to fill in things like "1" and the arrows on the giant ticket by band
+* There are limitations to the svg2gcode tool - mainly that it only supports certain types of vector paths. It also doesn't support infill options, so I had to fill in things like "1" and the arrows on the giant ticket by hand
 * The original gcode output from svg2gcode did not elevate the pen before going to the next gcode instruction. This could cause the pen to drag along the paper during the transition points. I wrote a small Python script to add an elevation command before every `G0` or `M2` command:
 
 ```python

@@ -14,7 +14,7 @@ In general, these works break down into 3 camps:
 
 This post will benchmark an aspect of that last camp. Previous research has shown that sparse weight matrices introduced by unstructured pruning can be used to accelerate network inferencing by [packing more data into CPU cache](https://neuralmagic.com/blog/how-neural-magics-deep-sparse-technology-works/) and taking advantage of GEMM instructions (ex: AVX2, AVX512-VNNI, and etc.). The main comparison is **not** between different networks or pruning techniques. Rather, we are comparing OpenVINO and DeepSparse - two popular CPU-based inference engines with support for pruned networks.
 
-**TLDR:** DeepSparse outperformed OpenVINO in throughput (img/s) by an average of 12%. However, on the m7i.xlarge instance (Intel Platinum 8488C), OpenVINO outperformed DeepSparse by an average of 17%. Does this mean the DeepSparse is faster than OpenVINO? In most lower-end compute  scenarios and with most network architectures - yes. Does this mean I will use DeepSparse? Probably not. 
+**TLDR:** DeepSparse outperformed OpenVINO in throughput (img/s) by an average of 12%. It also excelled in all the lower-end compute scenarios tested and with most network architectures. However, on the m7i.xlarge instance (Intel Platinum 8488C), OpenVINO outperformed DeepSparse by an average of 17%. Does this mean I will use DeepSparse? Probably not. 
 
 <figure>
 
